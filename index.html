@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+        <form class="nameForm" action="" onsubmit="event.preventDefault(); setNames()">
+        <div class="formContainer">
+            <div class="name" id="playerOne">
+            
+            <input placeholder="Player 1 Name" type="text" onchange="nameInput()" id="name1">   
+        </div>
+        <div style="color: gray; font-family: Arial, Helvetica, sans-serif;">Vs</div>
+        <div class="name" id="playerTwo">
+        
+         <input placeholder="Player 2 Name" type="text" onchange="nameInput()" id="name2">   
+        </div>
+     </div>
+     <div class="buttonContainer">
+         <button disabled=true id="submitNamesButton" class="btn">Set Names</button>
+     </div>
+        
+    </form>
+   
+    
+
+    <div class="gameContainer">
+        <div class="grid" id="grid">
+        <button disabled="true" class="box" id="1" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="2" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="3" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="4" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="5" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="6" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="7" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="8" onclick="boxCheck(id)"></button>
+        <button disabled="true" class="box" id="9" onclick="boxCheck(id)"></button>
+    </div>
+
+    </div>
+    
+    <div class="footer">
+        <h1 id="winner">please set names</h1>
+        <button id="reset"> RESET GAME </button>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

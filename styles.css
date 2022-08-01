@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 103px);
+    color: wheat;
+    
+}
+
+.box{
+    border: 1px solid rgb(206, 206, 206);
+    background-color: rgb(51, 42, 42);
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    text-align: center;
+    padding: 20%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: blanchedalmond;
+    text-shadow: 2px 2px black;
+    font-weight: 800;
+}
+
+#winner {
+    color: white;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.nameForm{
+    display: inline;
+}
+
+.name{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+input{
+    height: 30px;
+    font-size: 20px;
+}
+
+button{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    border-radius: 5px;;
+    margin: 0 auto;;
+}
+
+#winner{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+input {
+    text-align: center;
+}
